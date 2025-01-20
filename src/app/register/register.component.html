@@ -1,0 +1,23 @@
+<form [formGroup]="registro" (ngSubmit)="enviar()">
+  <p>
+    Usuario:
+    <input type="text" formControlName="usuario" required />
+  </p>
+  <p>
+    nombre:
+    <input type="text" formControlName="nombre" required />
+  </p>
+  <p>
+    Email:
+    <input type="email" formControlName="email" required />
+  </p>
+  <p>
+    Contraseña:
+    <input type="password" formControlName="contrasena" />
+    @if(this.registro.get('contrasena')?.errors?.['contrasenasValidator']){
+    <span>(la contraseña no cumple con los requisitos)</span>
+    }
+  </p>
+  <button type="submit" [disabled]="registro.invalid">Confirmar</button>
+  <button routerLink="/">Ir al login</button>
+</form>

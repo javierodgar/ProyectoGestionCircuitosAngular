@@ -1,0 +1,28 @@
+<div class="login-container">
+    <form #loginForm="ngForm" (ngSubmit)="onLogin()">
+      <label for="usuario">Nombre del usuario:</label>
+      <input id="usuario" name="usuario" type="text" [(ngModel)]="usuario" required/>
+      @if (usuarioInvalid){
+      <div>
+        <small>El nombre es requerido.</small>
+      </div>
+      }
+      <label for="contrasena">Contraseña:</label>
+      <input id="contrasena" name="contrasena" type="password" [(ngModel)]="contrasena" required/>
+      @if (contrasenaInvalid){
+      <div>
+        <small>La contraseña es requerida.</small>
+      </div>
+      }
+  
+      <button type="submit" [disabled]="loginForm.invalid">Logearse</button>
+      <button type="button" routerLink="register">Registrarse</button>
+    </form>
+  
+    @if (errorMessage){
+    <div class="error-message">
+      {{ errorMessage }}
+    </div>
+    }
+  </div>
+  

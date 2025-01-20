@@ -1,0 +1,34 @@
+<app-filtrar (enviar)="recibirFiltro($event)"></app-filtrar>
+<p>{{nombreRecibido}}   {{longitudMaxRecibida}}  {{longitudMinRecibida}}</p>
+
+<table>
+    <tr>
+        <th>nombre</th>
+        <th>longitud</th>
+        <th>premios</th>
+        <th>tiempo_vuelta_record</th>
+        <th>año</th>
+    </tr>
+    @for (circuito of circuitos; track $index) {
+        @if (circuito.nombre.toLowerCase().includes(nombreRecibido.toLowerCase()) &&
+             circuito.longitud >= longitudMinRecibida &&
+             circuito.longitud <= longitudMaxRecibida) {
+            <tr>
+                <td>{{circuito.nombre}}</td>
+                <td>{{circuito.longitud}}</td>
+                <td>{{circuito.premios}}</td>
+                <td>
+                    <table>
+                        <tr>
+                            <td>{{circuito.tiempo_vuelta_record.tiempo}}</td>
+                            <td>{{circuito.tiempo_vuelta_record.piloto}}</td>
+                            <td>{{circuito.tiempo_vuelta_record.ano}}</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>{{circuito.fecha_fundacion}}</td>
+            </tr>
+        }
+    }
+</table>
+

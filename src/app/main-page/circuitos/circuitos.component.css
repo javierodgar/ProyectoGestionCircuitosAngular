@@ -1,0 +1,56 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+}
+
+table th, table td {
+    border: 2px double #6d6d6d; /* Gris oscuro para los bordes */
+    padding: 10px;
+}
+
+table th {
+    background-color: #4d4d4d; /* Fondo gris oscuro para encabezados */
+    color: #fafafa; /* Texto claro para contraste */
+}
+
+table tr:nth-child(even) {
+    background-color: #d6d6d6; /* Gris claro para filas pares */
+}
+
+table tr:nth-child(odd) {
+    background-color: #f0f0f0; /* Gris más claro para filas impares */
+}
+
+td table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td table td, td table th {
+    border: 1px solid #6d6d6d; /* Bordes para tabla anidada */
+    text-align: center;
+    padding: 5px;
+}
+
+td table tr:nth-child(even) {
+    background-color: #d6d6d6; /* Fila par de tabla anidada */
+}
+
+td table tr:nth-child(odd) {
+    background-color: #f0f0f0; /* Fila impar de tabla anidada */
+}
+
+td table th {
+    background-color: #6d6d6d; /* Encabezados de tabla anidada */
+    color: #fafafa; /* Texto claro */
+}
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4d4d4d;
+}

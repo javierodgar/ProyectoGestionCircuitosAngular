@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  main {
+    margin-top: 60px; /* Para evitar que el contenido se oculte debajo del nav */
+    margin-bottom: 40px; /* Para evitar que el contenido se oculte debajo del footer */
+    padding: 20px;
+  }
