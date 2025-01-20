@@ -1,0 +1,15 @@
+<form [formGroup]="tiempo" (ngSubmit)="enviar()">
+    <p>
+        Circuito:
+        <select formControlName="circuito">
+            <option value="">temp1</option>
+            <option value="">temp2</option>
+        </select>
+    </p>
+    <p>
+        Tiempo:
+        <input type="time">
+    </p>
+    <button type="submit" [disabled]="tiempo.invalid">Confirmar</button>
+    <button routerLink="/">Ir al login</button>
+  </form>

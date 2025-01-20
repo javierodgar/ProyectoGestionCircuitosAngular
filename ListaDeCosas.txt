@@ -1,0 +1,15 @@
+completar sistema de visualizacion de tiempos
+	-cargar los datos desde un defer que espere la respuesta del servidor //demomento uso un defer con interaccion//
+	-hacerlo sin rutas, en caso de no lograrlo usar rutas //completado sin rutas//
+hacer que se pueda ocultar o mostrar con un mismo boton //completado con una misma funcion//
+
+completar pagina de acerca de
+
+montar sistema de gestion de tiempo (que los usuarios puedan registrar sus tiempos)
+
+usar un defer mas para los datos acerca de los circuitos
+
+
+Extras:
+	-cambiar la tabla de los circuitos por defeto por cards mas atractivas a la vista y que contengan fotos
+	-

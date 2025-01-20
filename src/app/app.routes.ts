@@ -5,6 +5,7 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CircuitosComponent } from './main-page/circuitos/circuitos.component';
 import { GestionPersonalComponent } from './main-page/gestion-personal/gestion-personal.component';
+import { AgregarTiempoComponent } from './main-page/gestion-personal/tiempos-personales/agregar-tiempo/agregar-tiempo.component';
 
 export const routes: Routes = [
     {
@@ -24,9 +25,14 @@ export const routes: Routes = [
                 component: GestionPersonalComponent
             },
             {
+                path: 'agregar-tiempo/:usuario2',
+                component: AgregarTiempoComponent
+            },
+            {
                 path: 'circuitos',
                 component: CircuitosComponent
             }
+
         ]
     },
     {

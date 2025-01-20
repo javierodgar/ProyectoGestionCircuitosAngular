@@ -3,14 +3,15 @@
     <p>apellido: {{usuarioData.apellido}}</p>
     <p>email: {{usuarioData.email}}</p>
     <p>usuario: {{usuarioData.usuario}}</p>
-  } @placeholder {
+} @placeholder {
     <button>Cargar datos Personales</button>
-  }
-  <button (click)="ocultar()">dejar de mirar</button>
-  <button (click)="mostrar()">mirar</button>
+}
+
+  <button (click)="mostrarOcultar()">Cargar mis tiempos</button>
+
 @if(visible==1){
-    <p>a miguel le gusta el pene de caballa pero por el culo</p>
-    
+    <app-tiempos-personales [tiempos]="tiempos"></app-tiempos-personales>
+    <button routerLink='/main/{{usuarioId}}/agregar-tiempo/{{usuarioId}}'>Agregar Nuevo tiempo</button>
 } @else {
     
 }

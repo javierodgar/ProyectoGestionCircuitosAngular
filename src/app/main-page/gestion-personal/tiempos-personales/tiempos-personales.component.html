@@ -1,1 +1,21 @@
 <p>tiempos-personales works!</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>circuitos</th>
+                <th>tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(tiempox of tiempos; track tiempox.tiempo){
+                <tr>
+                    <td>{{tiempox.nombre_circuito}}:</td>
+                    <td>{{tiempox.tiempo}}</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    
+    
