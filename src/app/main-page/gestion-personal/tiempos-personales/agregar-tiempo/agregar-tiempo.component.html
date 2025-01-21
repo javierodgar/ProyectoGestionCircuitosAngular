@@ -2,13 +2,14 @@
     <p>
         Circuito:
         <select formControlName="circuito">
-            <option value="">temp1</option>
-            <option value="">temp2</option>
+            @for(circuito of circuitos; track $index){
+                <option value="{{circuito.nombre}}">{{circuito.nombre}}</option>
+            }
         </select>
     </p>
     <p>
         Tiempo:
-        <input type="time">
+        <input type="time" formControlName="tiempo">
     </p>
     <button type="submit" [disabled]="tiempo.invalid">Confirmar</button>
     <button routerLink="/">Ir al login</button>

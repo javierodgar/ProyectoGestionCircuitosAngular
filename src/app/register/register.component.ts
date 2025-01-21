@@ -28,14 +28,12 @@ export class RegisterComponent {
   constructor(private loginServicio: LoginService) {}
 
   enviar() {
-    this.loginServicio
-      .registroUsuario(
+    this.loginServicio.registroUsuario(
         this.registro.value.usuario!,
         this.registro.value.nombre!,
         this.registro.value.email!,
         this.registro.value.contrasena!
-      )
-      .subscribe((resultado: any) => {
+      ).subscribe((resultado: any) => {
         console.log(resultado);
       });
   }

@@ -16,9 +16,7 @@ export class GestionPersonalComponent implements OnInit {
   tiempos: any = []; 
   visible = 0;
 
-  constructor(
-    private activatedRoute: ActivatedRoute, private loginServicio: LoginService
-  ) {}
+  constructor(private activatedRoute: ActivatedRoute, private loginServicio: LoginService) {}
 
   //procesos que se realizaran de forma automatica nada mas iniciar la pagina
   ngOnInit(): void {
