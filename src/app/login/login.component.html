@@ -1,17 +1,17 @@
 <div class="login-container">
     <form #loginForm="ngForm" (ngSubmit)="onLogin()">
-      <label for="usuario">Nombre del usuario:</label>
+      <label for="usuario">Usuario:</label>
       <input id="usuario" name="usuario" type="text" [(ngModel)]="usuario" required/>
       @if (usuarioInvalid){
       <div>
-        <small>El nombre es requerido.</small>
+        <small>Escribe tu usuario</small>
       </div>
       }
       <label for="contrasena">Contraseña:</label>
       <input id="contrasena" name="contrasena" type="password" [(ngModel)]="contrasena" required/>
       @if (contrasenaInvalid){
       <div>
-        <small>La contraseña es requerida.</small>
+        <small>Introduce tu contraseña</small>
       </div>
       }
   

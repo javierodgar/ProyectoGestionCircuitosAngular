@@ -18,11 +18,21 @@ usar un defer mas para los datos acerca de los circuitos//ya esta//
 añadir boton para borrar tiempo en la tabla
 añadir la opcion de ordenar los tiempos de una persona por tiempo o por circuitos
 
-añadir boton volver en error page//esta echo para que vuelva al login//
+añadir boton volver en error page //esta echo para que vuelva al login//
 
 Pasar datos de circuitos (los de circuitos service) a un json externo, hay que ponerlo en la carpeta public e importarlo
 
-usar Clases e interfaces(demomento voy a usar una en el footer para los datos(es una cutrada pero mejor que nada))
+usar Clases e interfaces(demomento voy a usar una en el footer para los datos(es una cutrada pero mejor que nada)) //esta echo, es cutre pero no no se me ocurre nada mejor//
+
+boton regreso agregar tiempos corregido //Echo//
+
+quitar datos mostrados por pantalla para comprobaciones
+
+intentar lo de activar un metodo del hijo desde el componente padre (un boton en el padre que active al hijo por ejemplo)
+    -igual se puede hacer algo en acerca de usando dos componentes en lugar de uno para mostrar los datos
+        es liar la marrana pero igual que las clases mejor que nada es 
+            (hacer un boton que muestre o deje de mostrar un mapa puesto en un iframe, el mapa le puedo coger directametne de google maps como en el anterior 
+                proyecto, puede quedar bien y asi no es tan cutre)
 
 
 Extras:

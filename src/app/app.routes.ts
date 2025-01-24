@@ -6,6 +6,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { CircuitosComponent } from './main-page/circuitos/circuitos.component';
 import { GestionPersonalComponent } from './main-page/gestion-personal/gestion-personal.component';
 import { AgregarTiempoComponent } from './main-page/gestion-personal/tiempos-personales/agregar-tiempo/agregar-tiempo.component';
+import { AcercaDeComponent } from './main-page/acerca-de/acerca-de.component';
 
 export const routes: Routes = [
     {
@@ -31,6 +32,10 @@ export const routes: Routes = [
             {
                 path: 'circuitos',
                 component: CircuitosComponent
+            },
+            {
+                path: 'acerca',
+                component: AcercaDeComponent
             }
 
         ]
