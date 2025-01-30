@@ -13,6 +13,12 @@ body {
     padding: 10px;
     text-align: center;
   }
+  a{
+    color: white;
+    text-decoration: none;
+  }
   a:hover{
-    color: red;
+    text-decoration: underline ;
+    font-size: 1.2em;
+    transition: font-size 0.2s;
   }

@@ -1,11 +1,6 @@
 import { Component } from '@angular/core';
-import { Router, RouterOutlet, RouterLink } from '@angular/router';
-import {
-  ReactiveFormsModule,
-  FormGroup,
-  FormControl,
-  Validators,
-} from '@angular/forms';
+import { RouterLink } from '@angular/router';
+import {  ReactiveFormsModule,  FormGroup,  FormControl, Validators,} from '@angular/forms';
 import { LoginService } from '../login.service';
 import { Validaciones } from '../validaciones';
 

@@ -4,8 +4,11 @@ export class Validaciones {
     static contrasenasValidator(control: AbstractControl): ValidationErrors| null{
         
         let contrasena = control.value;
-        const regex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
-        return regex.test(contrasena) ? null : { contrasenaValidator: true };
-
+        const regex = /^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{9,}$/;
+        if(!regex.test(contrasena)){
+            return {contrasenas: true};
+        } else {
+            return null;
+        }
     }
 }

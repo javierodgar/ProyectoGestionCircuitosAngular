@@ -1,22 +1,23 @@
-<div class="login-container">
+<body>
+  <div class="login-container">
     <form #loginForm="ngForm" (ngSubmit)="onLogin()">
       <label for="usuario">Usuario:</label>
-      <input id="usuario" name="usuario" type="text" [(ngModel)]="usuario" required/>
+      <input id="usuario" class="user" name="usuario" type="text" [(ngModel)]="usuario" required/>
       @if (usuarioInvalid){
       <div>
         <small>Escribe tu usuario</small>
       </div>
       }
       <label for="contrasena">Contraseña:</label>
-      <input id="contrasena" name="contrasena" type="password" [(ngModel)]="contrasena" required/>
+      <input id="contrasena" class="password" name="contrasena" type="password" [(ngModel)]="contrasena" required/>
       @if (contrasenaInvalid){
       <div>
         <small>Introduce tu contraseña</small>
       </div>
       }
   
-      <button type="submit" [disabled]="loginForm.invalid">Logearse</button>
-      <button type="button" routerLink="register">Registrarse</button>
+      <button type="submit" class="boton" [disabled]="loginForm.invalid">Logearse</button>
+      <button type="button" class="boton" routerLink="register">Registrarse</button>
     </form>
   
     @if (errorMessage){
@@ -24,5 +25,6 @@
       {{ errorMessage }}
     </div>
     }
-  </div>
+</div>
+</body>
   

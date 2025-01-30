@@ -1,0 +1,45 @@
+p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #4d4d4d; /* Gris oscuro para el texto */
+}
+
+button {
+    background-color: #90560a; /* Naranja oscuro */
+    color: #fafafa; /* Texto claro */
+    border: 2px solid #6d6d6d; /* Borde gris oscuro */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #cb7a0e; /* Naranja más claro */
+    transform: translateY(-2px);
+}
+
+button:focus {
+    outline: none;
+    border-color: #f49211; /* Naranja para el borde en foco */
+}
+
+@placeholder button {
+    background-color: #333333; /* Gris oscuro para el botón de cargar */
+    color: #fafafa; /* Texto claro */
+    border: 2px solid #6d6d6d; /* Borde gris oscuro */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+@placeholder button:hover {
+    background-color: #4d4d4d; /* Gris más claro al pasar el ratón */
+    transform: translateY(-2px);
+}
+
+@placeholder button:focus {
+    outline: none;
+    border-color: #f49211; /* Naranja para el borde en foco */
+}

@@ -1,5 +1,7 @@
-
-
 @if(showMap){
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511.89993975253026!2d-4.723073154607438!3d41.66448983174957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd470d55e3273467%3A0xb3fd8e57a6131b03!2sIES%20Ribera%20de%20Castilla!5e0!3m2!1ses!2ses!4v1737736286818!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    @defer () {
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d511.89993975253026!2d-4.723073154607438!3d41.66448983174957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd470d55e3273467%3A0xb3fd8e57a6131b03!2sIES%20Ribera%20de%20Castilla!5e0!3m2!1ses!2ses!4v1737736286818!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    } @placeholder {
+        <p>Cargando el mapa</p>
+    }
 }
