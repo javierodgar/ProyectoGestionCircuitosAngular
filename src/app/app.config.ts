@@ -4,6 +4,7 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 
 import { provideHttpClient } from '@angular/common/http';
+import { HttpRequest } from '@angular/common/http'; 
 import { withFetch } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {

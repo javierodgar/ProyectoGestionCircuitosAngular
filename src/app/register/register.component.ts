@@ -17,7 +17,7 @@ export class RegisterComponent {
     usuario: new FormControl('', [Validators.required]),
     nombre: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
-    contrasena: new FormControl('', [Validators.required, Validaciones.contrasenasValidator]),
+    contrasena: new FormControl('', [Validaciones.contrasenas, Validators.required ]),
   });
 
   constructor(private loginServicio: LoginService) {}

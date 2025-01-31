@@ -1,23 +1,29 @@
-<form [formGroup]="registro" (ngSubmit)="enviar()">
-  <p>
-    Usuario:
-    <input type="text" formControlName="usuario" required />
-  </p>
-  <p>
-    nombre:
-    <input type="text" formControlName="nombre" required />
-  </p>
-  <p>
-    Email:
-    <input type="email" formControlName="email" required />
-  </p>
-  <p>
-    Contraseña:
-    <input type="text" formControlName="contrasena" />
-    @if (this.registro.get('contrasena')?.errors?.['validatorContrasena']){
-      <p>pon bien la contraseña</p>
-    }
-  </p>
-  <button type="submit" [disabled]="registro.invalid">Confirmar</button>
-  <button routerLink="/">Ir al login</button>
-</form>
+<body>
+  <form [formGroup]="registro" (ngSubmit)="enviar()">
+    <p>
+      <label for="usuario">Usuario:</label>
+      <input type="text" formControlName="usuario" required class="user" />
+    </p>
+    <p>
+      <label for="nombre">Nombre:</label>
+      <input type="text" formControlName="nombre" required class="user" />
+    </p>
+    <p>
+      <label for="email">Email:</label>
+      <input type="email" formControlName="email" required class="user" />
+      @if (this.registro.get('email')?.errors?.['email']) {
+        <span>deve de ser un email valido</span>
+      }
+    </p>
+    <p>
+      <label for="contrasena">Contraseña:</label>
+      <input type="password" formControlName="contrasena" class="password"/>
+      @if (this.registro.get('contrasena')?.errors?.['contrasenas']) {
+        <p>pon bien la contraseña</p>
+      }
+    </p>
+    <button type="submit" [disabled]="registro.invalid" class="boton">Confirmar</button>
+    <button routerLink="/" class="boton">Ir al login</button>
+  </form>
+  
+</body>
